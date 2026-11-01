@@ -1,0 +1,499 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_c255b31ae9f8408cbf6d838e778a5514
+  created: 1789463308114
+  modified: 1789463308114
+  description: ""
+collection:
+  - url: http://localhost:3000/courses/1/students/1
+    name: hogwarts_kollektion
+    meta:
+      id: req_b23c5044ce3d482fb3d04cb26425ffff
+      created: 1793562549915
+      modified: 1793571448218
+      isPrivate: false
+      description: ""
+      sortKey: -1793562549915
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/courses/8
+    name: Courses | DELETE /courses/9999
+    meta:
+      id: req_225b947abdcd4c8fa86947951f0c4d0f
+      created: 1793570000000
+      modified: 1793572131656
+      isPrivate: false
+      description: Slet kursus med ID 9999; vælg et eksisterende ID for at teste
+        vellykket sletning.
+      sortKey: -1793569999984
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers/8
+    name: Teachers | PUT /teachers/1
+    meta:
+      id: req_2497b238fa444945b2338ae632dcbcc7
+      created: 1793570000000
+      modified: 1793571955652
+      isPrivate: false
+      description: Opdater lærer 1 (ændrer data).
+      sortKey: -1793569999995
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Updated Teacher",
+          "house": 1
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/courses/1/students
+    name: Courses | GET /courses/1/students
+    meta:
+      id: req_26c0ee7e5c39467fa622350de5535f63
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Hent tilmeldte elever til kursus 1
+      sortKey: -1793569999982
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/courses/8
+    name: Courses | PUT /courses/1
+    meta:
+      id: req_30df5832f59f466f8b56e0624f7bc455
+      created: 1793570000000
+      modified: 1793572121972
+      isPrivate: false
+      description: Opdater kursus 1 (ændrer data).
+      sortKey: -1793569999985
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Updated Course",
+          "teacher": 1
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/houses/1
+    name: Houses | GET /houses/1
+    meta:
+      id: req_3113a2a3035e4c55adae2ce2d8340391
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Hent hus med ID 1
+      sortKey: -1793569999999
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/courses/1/students/1
+    name: Courses | DELETE /courses/1/students/1
+    meta:
+      id: req_44bbb19b89c64a4ca51a8c869b522a46
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Fjern elev 1 fra kursus 1 (ændrer data).
+      sortKey: -1793569999980
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/courses
+    name: Courses | GET /courses
+    meta:
+      id: req_4f5f36cd7edf405dbd3be7887cefd2fe
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Hent alle kurser
+      sortKey: -1793569999988
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/students
+    name: Students | GET /students
+    meta:
+      id: req_5611176c4e254e12a0fcb3ebc66c4d24
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Hent alle elever
+      sortKey: -1793569999993
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/students/10
+    name: Students | PUT /students/1
+    meta:
+      id: req_7048285038364c8b977bd59166568442
+      created: 1793570000000
+      modified: 1793572044235
+      isPrivate: false
+      description: Opdater elev 1 (ændrer data).
+      sortKey: -1793569999990
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Updated Student",
+          "year": "2026",
+          "house": 1
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers
+    name: Teachers | POST /teachers
+    meta:
+      id: req_7dd9d4c989c54b0a970e1068afcac0cc
+      created: 1793570000000
+      modified: 1793571914001
+      isPrivate: false
+      description: Opret lærer. Ret eventuelt hus-ID til et eksisterende.
+      sortKey: -1793569999996
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Test Teacher",
+          "house": 1
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/students
+    name: Students | POST /students
+    meta:
+      id: req_7e0aebc4ce81490aa8c0828a3615d6fc
+      created: 1793570000000
+      modified: 1793572031078
+      isPrivate: false
+      description: Opret elev.
+      sortKey: -1793569999991
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Test Student",
+          "year": "2026",
+          "house": 1
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/courses/1/students/8
+    name: Courses | POST /courses/1/students/1
+    meta:
+      id: req_84f3debf6aa0475a83a8855588834c4c
+      created: 1793570000000
+      modified: 1793572359518
+      isPrivate: false
+      description: Tilmeld elev 1 til kursus 1; hvis allerede tilmeldt, vælg en anden
+        kombination.
+      sortKey: -1793569999981
+    method: POST
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers
+    name: Teachers | GET /teachers
+    meta:
+      id: req_8cd1ca75bc274988883730914116c3eb
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Hent alle lærere
+      sortKey: -1793569999998
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/courses/1/teacher
+    name: Courses | PUT /courses/1/teacher
+    meta:
+      id: req_92aa1ee32e064b2b91b7e5fb111e922b
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Skift lærer på kursus 1.
+      sortKey: -1793569999983
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "teacher": 2
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers/1
+    name: Teachers | GET /teachers/1
+    meta:
+      id: req_97c4916ff61048668fc1b5788fa87fee
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Hent lærer med ID 1
+      sortKey: -1793569999997
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/houses
+    name: Houses | GET /houses
+    meta:
+      id: req_b34df5b89e3a4ab992cc1b827a8f4ee0
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Hent alle huse
+      sortKey: -1793570000000
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/courses
+    name: Courses | POST /courses
+    meta:
+      id: req_b84d66095e874e99a66ffe6d9519ca01
+      created: 1793570000000
+      modified: 1793572105516
+      isPrivate: false
+      description: Opret kursus.
+      sortKey: -1793569999986
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Test Course",
+          "teacher": 1
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/students/1
+    name: Students | GET /students/1
+    meta:
+      id: req_c9ed774917764f81bed1f78bfed5a9ab
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Hent elev 1
+      sortKey: -1793569999992
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers/8
+    name: Teachers | DELETE /teachers/9999
+    meta:
+      id: req_cda80df3fa5d4b97ba8e89c900da2b38
+      created: 1793570000000
+      modified: 1793571963008
+      isPrivate: false
+      description: Slet lærer med ID 9999; vælg et eksisterende ID for at teste
+        vellykket sletning.
+      sortKey: -1793569999994
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/students/10
+    name: Students | DELETE /students/9999
+    meta:
+      id: req_de614af27acd4f1cb1c9476452a7e16b
+      created: 1793570000000
+      modified: 1793572090351
+      isPrivate: false
+      description: Slet elev med ID 9999; vælg et eksisterende ID for at teste
+        vellykket sletning.
+      sortKey: -1793569999989
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/courses/1
+    name: Courses | GET /courses/1
+    meta:
+      id: req_f535310b6c624f81825b03aa7544715a
+      created: 1793570000000
+      modified: 1793570000000
+      isPrivate: false
+      description: Hent kursus 1
+      sortKey: -1793569999987
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_12f0a1ff13f6115a170190b27e8810cbacec4830
+    created: 1789463308117
+    modified: 1789463308117
+environments:
+  name: Base Environment
+  meta:
+    id: env_12f0a1ff13f6115a170190b27e8810cbacec4830
+    created: 1789463308116
+    modified: 1789463308116
+    isPrivate: false
